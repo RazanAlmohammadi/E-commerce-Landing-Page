@@ -5,72 +5,142 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/Images/logo.png" />
   <title>E-commerce</title>
 </head>
 
 <body>
-  <header class="header">
-    <nav>
-      <img src="./Images/logo.png" alt="logo" width="120px" />
-      <ul>
-        <li>Home</li>
-        <li>VideoGames</li>
-        <li>About Us</li>
-        <img src="./Images/cart icon.png" alt="cart" width="20px" />
-        <img src="./Images/logIn icon.png" alt="login" width="20px" />
-      </ul>
-    </nav>
+  <header>
+    <div class="header__logo">
+      <nav>
+        <img src="./Images/logo.png" alt="logo" width="120px" />
+        <ul>
+          <li>Home</li>
+          <li>VideoGames</li>
+          <li>About Us</li>
+          <img src="./Images/shopping-cart .png" alt="cart" width="25px" />
+          <img src="./Images/user.png" alt="login" width="25px" />
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to VideoGames Store</h1>
-    <h3>Your Ultimate Destination for All Things Gaming!</h3>
-    <h3>Explore the Best Video Games at Unbeatable Prices!</h3>
-    <button>Buy Now</button>
+  <section id="hero">
+    <div class="hero__content">
+      <h2 class="title">Welcome to VideoGames Store</h2>
+      <p>Your Ultimate Destination for All Things Gaming!</p>
+      <p>Explore the Best Video Games at Unbeatable Prices!</p>
+      <button class="btn">Buy Now</button>
+    </div>
   </section>
 
-  <section>
-    <div>
-      <h2>Games</h2>
+  <section id="VideoGames">
+    <div class="VideoGame">
       <img src="./Images/uncharted-the-lost-legacy.jpg" alt="Uncharted" />
-      <div class="game-box">
+      <article>
         <h3>Uncharted: The Lost Legacy</h3>
-        <article>
-          Uncharted: The Lost Legacy is a 2017 action-adventure game where treasure hunter Chloe Frazer and mercenary
+        <p>Uncharted: The Lost Legacy is a 2017 action-adventure game where treasure hunter Chloe Frazer and mercenary
           Nadine Ross search for the Tusk of Ganesh in India. It features exploration, combat, and puzzles with a
-          thrilling narrative and stunning visuals.
-        </article>
-      </div>
+          thrilling narrative and stunning visuals.</p>
+      </article>
     </div>
-    <div class="reviews-section">
-      <h4>Reviews</h4>
-      <div>[Profile Picture]</div>
-      <div>[Razan Almohammadi]</div>
-      <div>[Rate: ★★★★☆]</div>
-      <article>It is very fun!</article>
+
+    <div class="VideoGame">
+      <img src="./Images/fortnite.jpg" alt="fortnite" />
+      <article>
+        <h3>Fortnite</h3>
+        <p>Fortnite is an online battle royale game where players fight to be the last one standing. It features
+          building mechanics, fast-paced combat, and in-game purchases for cosmetic items.</p>
+      </article>
+    </div>
+
+    <div class="VideoGame">
+      <img src="./Images/mincraft.jpg" alt="minecraft" />
+      <article>
+        <h3>Minecraft</h3>
+        <p>Minecraft is a sandbox game where players build, explore, and survive in a block-based world, using
+          creativity
+          and resources to craft and survive.</p>
+      </article>
     </div>
   </section>
+
+  <section id="reviews">
+
+    <h2>Customer Reviews</h2>
+
+    <div class="review__content">
+
+      <article>
+
+        <p>[Profile Picture] </p>
+
+        <p>[Razan ]</p>
+
+        <p>[Rate: ★★★★☆]</p>
+
+        <p>It is very fun!</p>
+
+      </article>
+
+
+
+      <article>
+
+        <p>[Profile Picture] </p>
+
+        <p>[Sara]</p>
+
+        <p>[Rate: ★★☆☆☆]</p>
+
+        <p>It was okay, but I expected more.</p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
 
   <section class="newsletter-section">
-    <h2>Subscribe to Our Newsletter</h2>
-    <p>Stay updated with the latest game releases and special offers!</p>
-    <label for="email">Enter your email:</label>
-    <input type="email" id="email" name="email" />
-    <button type="submit">Subscribe</button>
+
+    <div>
+
+      <h3>Subscribe to Our Newsletter</h3>
+
+      <p>Stay updated with the latest game releases and special offers!</p>
+
+      <form>
+
+        <label>Email:</label>
+
+        <input type="email" name="email" />
+
+        <button>Subscribe</button>
+
+      </form>
+
+    </div>
+
   </section>
 
-  <footer class="footer-section">
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li>Terms & Conditions</li>
-        <li>Privacy Policy</li>
-        <li>Location</li>
-        <li>X</li>
-        <li>Instagram</li>
-      </ul>
-    </div>
-  </footer>
 </body>
+
+<footer class="footer-section">
+  <div class="footer-links">
+    <h4>Quick Links</h4>
+    <ul>
+      <li>Terms & Conditions</li>
+      <li>Privacy Policy</li>
+      <li><a href="https://www.google.com/maps" target="_blank">Location </a>
+      </li>
+      <li><a href="https://www.facebook.com/" target="_blank">Facebook </a>
+      </li>
+      <li><a href="https://www.instagram.com/" target="_blank">Instagram </a>
+      </li>
+    </ul>
+  </div>
+</footer>
 
 </html>
