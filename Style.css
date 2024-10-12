@@ -1,19 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.body{
+
+.body {
     background-color: #E8EDDF;
 
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  background-color: #fff;
-  
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+
 }
+
 .header__logo img {
     height: 60px;
     width: 60px;
@@ -34,7 +36,7 @@ header nav ul {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-  
+
 }
 
 nav ul li {
@@ -52,15 +54,15 @@ nav img {
     padding: 50px 0;
     background-color: #f4f4f4;
     background-image: url("./images/background.png");
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-        display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 80px;
-      
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+
 }
 
 
@@ -77,6 +79,64 @@ nav img {
     padding-left: -20px;
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #F5CB5C;
+    color: black;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    animation: pulse 2s infinite;
+}
+
+.btn:hover {
+    background-color: #d1a64a;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #F5CB5C;
+    color: black;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    animation: pulse 2s infinite;
+}
+
+.btn:hover {
+    background-color: #d1a64a;
+}
+
 #VideoGames {
     margin-top: 40px;
     display: flex;
@@ -84,15 +144,45 @@ nav img {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .VideoGame img {
     max-width: 100%;
     height: auto;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.VideoGame img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.VideoGame img:hover {
+    transform: scale(1.05);
+}
+
+.VideoGame img {
+    max-width: 100%;
+    height: auto;
+    animation: slideIn 1s ease-in-out;
 }
 
 .VideoGame article {
     max-width: 300px;
     text-align: left;
 }
+
 section div {
     display: flex;
     flex-direction: column;
@@ -126,6 +216,7 @@ section div img {
     background-color: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .footer-section {
     position: sticky;
     bottom: 0;
@@ -146,4 +237,9 @@ section div img {
 .footer-links ul li {
     margin: 0 10px;
     cursor: pointer;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
 }
